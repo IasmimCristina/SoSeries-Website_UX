@@ -5,6 +5,7 @@
 
 - A ideia é aprimorar o projeto ao adicionar paginação e correção de código.
 
+- No projeto, há o código feito em equipe com: https://github.com/lstheus , https://github.com/oMatematic e https://github.com/Jonatas-Gomes . Para a A3 da UC de Desenvolvimento Web e Mobile da Unifacs. O Readme completo, pastas e os dados completos se encontram na pasta raíz.
 # RECURSOS:
 ## Algumas telas do projeto [Desktop-Mobile] 
 - **O projeto possui scrollagem personalizada.**
