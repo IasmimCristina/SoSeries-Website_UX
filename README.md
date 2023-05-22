@@ -1,6 +1,8 @@
 # SoSeries-Website_UX
  Projeto simples feito com somente html/css e Js para aprimorar minhas habilidades de design.
 
+![image](https://github.com/lstheus/EntregaP1A3/assets/57242457/d40a4bc1-3d50-45c1-92ae-f9d5ff62e0ae)
+
 - A ideia é aprimorar o projeto ao adicionar paginação e correção de código.
 
 # RECURSOS:
