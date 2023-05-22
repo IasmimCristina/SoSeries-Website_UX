@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ícone de guia -->
+    <link
+      rel="shortcut icon"
+      href="../../public/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Fontes do google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ícones do Google -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Estilização -->
+    <link rel="stylesheet" href="../../public/styles/reset.css" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>SóSéries - Adm</title>
+  </head>
+
+  <body class="">
+    <header>
+      <div class="header-mobile">
+        <div class="user-bar">
+          <div class="user-wrapper">
+            <div class="circle-user">
+              <img src="../../public/images/user.png" alt="" />
+            </div>
+
+            <span class="nickname">Admin</span>
+          </div>
+        </div>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </div>
+      <div class="navbar">
+        <nav>
+          <div>
+            <a href="">
+              <span class="material-icons"> person </span> Add listas
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <span class="material-icons"> ondemand_video </span>Séries
+            </a>
+          </div>
+
+          <div>
+            <a href=""> <span class="material-icons"> logout </span>Sair </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mobile-side">
+      <nav>
+        <a href=""> <span class="material-icons"> person </span> Add listas </a>
+        <a href="">
+          <span class="material-icons"> ondemand_video </span>Séries
+        </a>
+        <a href=""> <span class="material-icons"> face </span>Usuários </a>
+        <a href=""> <span class="material-icons"> logout </span>Sair </a>
+      </nav>
+
+      <hr />
+      <img
+        src="../../public/images/logo-variations/logo-light-second.png"
+        alt="Logomarca Projeto SóSéries"
+      />
+    </div>
+
+    <div class="side-menu">
+      <div class="user-bar">
+        <div class="user-wrapper">
+          <div class="circle-user">
+            <img src="../../public/images/user.png" alt="Perfil do usário" />
+          </div>
+
+          <span class="nickname">Admin</span>
+          <span class="material-icons settings"> settings </span>
+        </div>
+      </div>
+
+      <div class="side-bar-items">
+        <span class="side-bar-items-title">Dados</span>
+        <hr />
+        <div class="side-bar-item">
+          <span class="item-text">Usuários</span>
+          <span class="material-icons"> group </span>
+        </div>
+        <div class="side-bar-item">
+          <span class="item-text">Séries</span>
+
+          <span class="material-icons"> auto_awesome_motion </span>
+        </div>
+        <div class="side-bar-item" id="checked">
+          <span class="item-text">Cadastrar</span>
+          <span class="material-icons"> app_registration </span>
+        </div>
+        <div class="side-bar-item">
+          <span class="item-text">Sair </span>
+
+          <span class="material-icons"> logout </span>
+        </div>
+        <img
+          src="../../public/images/logo-variations/logo-light.png"
+          alt="Projeto SóSéries logomarca."
+        />
+      </div>
+    </div>
+
+    <main>
+      <div class="visual">
+        <img
+          src="../../public/images/logo-variations/logo-light.png"
+          alt="Projeto SóSéries logomarca."
+        />
+      </div>
+
+      <section class="main-content">
+        <div class="title-wrapper">
+          <span class="material-symbols-outlined"> navigate_next </span>
+          <h1>Cadastro</h1>
+        </div>
+
+        <div class="info">
+          <div class="warning-wrapper">
+            <span class="material-icons"> manage_accounts </span>
+
+            <span class="warning">Cadastro de usuários</span>
+          </div>
+
+          <div class="explanation">
+            <div class="">
+              <div class="order">
+                <div class="profile-pic">
+                  <div class="wrapper-profile">
+                    <img
+                      src="../../public/images/user.png"
+                      alt="Foto do usuário"
+                      id="photo"
+                    />
+                    </div>
+                    <input type="file" id="file" />
+                    <label for="file" id="uploadPicBtn">Mudar foto</label>
+                  </div>
+                <form class="cadastrar_usuario">
+
+                  <div class="input-box">
+                    <label class="apelido_label" for="apelido_input">Primeiro nome</label>
+                    <input class="apelido_input" type="text" placeholder="Ex: Guanabara" required>
+                </div>
+                <div class="input-box">
+                  <label class="apelido_label" for="apelido_input">Último nome</label>
+                  <input class="apelido_input" type="text" placeholder="Ex: Guanabara" required>
+              </div>
+              <div class="input-box">
+                <label class="apelido_label" for="apelido_input">Apelido</label>
+                <input class="apelido_input" type="text" placeholder="Ex: Guanabara" required>
+            </div>
+                <div class="input-box">
+                  <label class="email_label" for="email_input">E-mail</label>
+                  <input class="email_input" type="email" placeholder="exemplo@gmail.com" required>
+                </div>
+                <div class="input-box">
+                    <label class="password_label" for="password_input">Senha</label>
+                    <input class="password_input" type="password" placeholder=" * * * * * * * * *" required>
+                </div>
+                <div class="input-box">
+                  <label class="passwordConfirmation_label" for="passwordConfirmation_input">Confirmar Senha</label>
+                  <input class="passwordConfirmation_input" type="password" placeholder=" * * * * * * * * *" required>
+              </div>
+                <div class="form-btn-cadastrar">
+                  <button id="cadastrar">
+                    <span class="material-icons"> person_add  </span>
+                    Cadastrar
+                  </button>
+
+                        </span></button>
+                </div>
+                
+                </form>
+                <div class="form-btn-voltar" action="#">
+                  <button id="voltar">
+                    <span class="material-icons"> arrow_back  </span>
+                    Voltar
+                  </button>
+
+                        </span></button>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="navigation-mobile">
+      <ul>
+        <li class="side-bar-item">
+          <span class="item-text">Usuários</span>
+
+          <span class="material-icons"> group </span>
+        </li>
+        <li class="side-bar-item">
+          <span class="item-text">Séries</span>
+
+          <span class="material-icons"> auto_awesome_motion </span>
+        </li>
+        <li class="side-bar-item" id="checked">
+          <span class="item-text">Cadastrar</span>
+          <span class="material-icons"> app_registration </span>
+        </li>
+        <li class="side-bar-item">
+          <span class="item-text">Sair </span>
+
+          <span class="material-icons"> logout </span>
+        </li>
+      </ul>
+    </div>
+  </body>
+
+  <!-- Javascript geral -->
+  <script src="../../register/JS/app.js"></script>
+  <script src="../../public/JS/mobile.js"></script>
+</html>

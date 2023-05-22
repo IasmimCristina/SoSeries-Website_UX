@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/profile.css" />
+
+    <!-- ícones Google -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- ícone de guia -->
+    <link
+      rel="shortcut icon"
+      href="../public/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>SóSeries - Meu Perfil</title>
+  </head>
+
+  <body>
+    <header class="header-title">
+      <img
+        src="../public/images/logo-variations/logo-light.png"
+        alt="Projeto SóSeries"
+      />
+    </header>
+
+
+
+ 
+    <main class="profile">
+      <div class="profile-pic">
+        <div class="wrapper-profile">
+          <img
+            src="../public/images/user.png"
+            alt="Foto do usuário"
+            id="photo"
+          />
+          <input type="file" id="file" />
+          <label for="file" id="uploadPicBtn">Mudar foto</label>
+        </div>
+
+        <div class="profile-username">
+          <span class="material-symbols-outlined"> navigate_next </span>
+          <span class="nickname">Apelido</span>
+        </div>
+
+        <button id="btn-back" onclick="goBack()">
+          <span class="material-icons"> arrow_back </span>
+          Voltar
+        </button>
+      </div>
+
+      <div class="profile-info">
+        <div class="info-boxes">
+          <div class="info-box">
+            <div class="text">
+              <span class="profile-label">Nome completo:</span>
+              <span class="profile-data">Iasmim Cristina</span>
+            </div>
+
+            <span class="material-icons"> settings </span>
+          </div>
+          <div class="info-box">
+            <div class="text">
+              <span class="profile-label">E-mail:</span>
+              <span class="profile-data">exemplo@gmail.com</span>
+            </div>
+            <span class="material-icons"> settings </span>
+          </div>
+          <div class="info-box">
+            <div class="text">
+              <span class="profile-label">Apelido:</span>
+              <span class="profile-data">Ias1234</span>
+            </div>
+            <span class="material-icons"> settings </span>
+          </div>
+        </div>
+        <button id="change-password">
+          <span class="material-icons"> lock </span>
+          Mudar senha?
+        </button>
+      </div>
+      <div class="profile-series">
+        <button class="logout-button" id="logout">
+          <span class="material-icons"> meeting_room </span>
+          Sair
+        </button>
+
+        <div class="series">
+          <span class="material-symbols-outlined" id="liked">
+            sentiment_very_satisfied
+          </span>
+          <p>Favoritas → 05 series</p>
+        </div>
+        <div class="series">
+          <span class="material-symbols-outlined" id="disliked">
+            sentiment_very_dissatisfied
+          </span>
+          <p>Piores Séries → 09 series</p>
+        </div>
+        <div class="series">
+          <span class="material-symbols-outlined" id="watched"> done_all </span>
+          <p>Já Vistas -> 09 series</p>
+        </div>
+        <div class="series">
+          <span class="material-symbols-outlined" id="wish"> hotel_class </span>
+          <p>Desejo Ver → 09 series</p>
+        </div>
+
+        <button class="delete-button">
+          <span class="material-symbols-outlined"> delete </span>Deletar conta?
+        </button>
+      </div>
+    </main>
+   <script src="../public/JS/pagination.js"></script>
+    <script src="../register/JS/app.js"></script>
+  </body>
+</html>

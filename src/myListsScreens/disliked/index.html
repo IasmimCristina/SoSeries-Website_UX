@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ícone de guia -->
+  <link rel="shortcut icon" href="../../public/images/favicon.ico" type="image/x-icon">
+  <!-- Fontes do google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <!-- Ícones do Google -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Estilização -->
+  <link rel="stylesheet" href="../public/styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- Swiper Carrossél css -->
+  <!-- <link rel="stylesheet" href="./styles/swiper-bundle.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+
+  <title>SóSéries</title>
+</head>
+
+<body class="">
+
+
+  <header>
+    <div class="header-mobile">
+      <div class="user-bar">
+        <div class="user-wrapper">
+
+          <div class="circle-user">
+
+            <img src="../../public/images/user.png" alt="">
+
+          </div>
+
+          <span class="nickname">Apelido</span>
+
+        </div>
+      </div>
+      <button class="hamburger ">
+        <div class="bar">
+
+        </div>
+      </button>
+    </div>
+    <div class="navbar">
+      <nav>
+        <div>
+          <a href="">
+
+            <span class="material-icons">
+              person
+            </span> Minhas listas
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <span class="material-icons">
+              ondemand_video
+            </span>Mais séries
+          </a>
+        </div>
+
+
+        <div>
+
+          <a href="">
+            <span class="material-icons">
+              logout
+
+            </span>Sair
+          </a>
+        </div>
+      </nav>
+
+    </div>
+
+
+  </header>
+  <div class="mobile-side">
+    <nav>
+      <a href="">
+        <span class="material-icons">
+          person
+        </span> Minhas listas
+      </a>
+      <a href="">
+        <span class="material-icons">
+          ondemand_video
+        </span>Mais séries
+      </a>
+      <a href="">
+        <span class="material-icons">
+          face
+        </span>Visualizar perfil
+      </a>
+      <a href="">
+        <span class="material-icons">
+          logout
+        </span>Sair
+      </a>
+    </nav>
+    
+    
+    <hr>
+    <img src="../../public/images/logo-variations/logo-light-second.png" alt="Logomarca Projeto SóSéries">
+  </div>
+
+  <div class="side-menu">
+
+    <div class="user-bar">
+      <div class="user-wrapper">
+
+        <div class="circle-user">
+
+          <img src="../../public/images/user.png" alt="">
+
+        </div>
+
+        <span class="nickname">Apelido</span>
+        <span class="material-icons settings">
+          settings
+        </span>
+      </div>
+    </div>
+
+
+    <div class="side-bar-items">
+      <span class="side-bar-items-title">Suas listas</span>
+      <hr>
+      <div class="side-bar-item "><span class="item-text">Favoritas</span>
+
+        <span class="material-symbols-outlined" id="liked">
+          sentiment_very_satisfied
+        </span>
+
+      </div>
+      <div class="side-bar-item"><span class="item-text">Já vistas</span>
+
+        <span class="material-symbols-outlined" id="watched">
+          done_all
+        </span>
+      </div>
+      <div class="side-bar-item "><span class="item-text">Desejo ver</span>
+        <span class="material-symbols-outlined" id="wish">
+          hotel_class
+        </span>
+
+
+      </div>
+      <div class="side-bar-item "  id="checked"><span class="item-text">Piores </span>
+
+        <span class="material-symbols-outlined" id="disliked">
+          sentiment_very_dissatisfied
+        </span>
+      </div>
+      <img src="../../public/images/logo-variations/logo-light.png" alt="Projeto SóSéries logomarca.">
+
+
+    </div>
+  </div>
+
+
+  <main>
+
+
+    <div class="visual">
+      <img src="../../public/images/logo-variations/logo-light.png" alt="Projeto SóSéries logomarca.">
+    </div>
+
+    <section class="main-content">
+      <div class="title-wrapper">
+        <span class="material-symbols-outlined">
+          navigate_next
+        </span>
+        <h1>Piores séries</h1>
+      </div>
+
+
+      <!-- Carrossél -->
+      <div class="card-slider-wrapper" id="va_container">
+
+        <button class="deals-scroll-left deals-paddle">
+          <span class="material-symbols-outlined">
+            arrow_back_ios
+          </span>
+        </button>
+
+        <div class="slide-content va-carrousel-flexbox">
+
+
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/falcao.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Lupin</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2019</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">10 ep(s)</span>
+              <span class="temps">2 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/sherlock.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Anne com E</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2022</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">22 ep(s)</span>
+              <span class="temps">2 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/naruto.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Mob Psycho 100</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2008</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">18 ep(s)</span>
+              <span class="temps">3 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/wanda.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Space Force</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2020</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">15 ep(s)</span>
+              <span class="temps">1 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/bokunohero.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Lupin</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2018</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">26 ep(s)</span>
+              <span class="temps">2 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/women.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Space Force</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2020</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">15 ep(s)</span>
+              <span class="temps">1 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/lupin.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Lupin</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2018</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">26 ep(s)</span>
+              <span class="temps">2 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/space-force.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Space Force</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2020</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">15 ep(s)</span>
+              <span class="temps">1 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/lupin.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Lupin</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2018</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">26 ep(s)</span>
+              <span class="temps">2 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+
+
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/lupin.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Lupin</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2019</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">10 ep(s)</span>
+              <span class="temps">2 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/anne.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Anne com E</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2022</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">22 ep(s)</span>
+              <span class="temps">2 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/mob.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Mob Psycho 100</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2008</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">18 ep(s)</span>
+              <span class="temps">3 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/lupin.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Lupin</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2019</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">10 ep(s)</span>
+              <span class="temps">2 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/anne.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Anne com E</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2022</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">22 ep(s)</span>
+              <span class="temps">2 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+          <div class="card-slide va-card">
+            <div class="img-title">
+              <img src="../../public/images/series/mob.jpg" alt="Imagem promocional da série">
+
+              <span class="series-title">Mob Psycho 100</span>
+
+            </div>
+
+            <div class="info-series">
+              <div class="avaliacao">
+
+                <span class="material-icons-outlined" id="star-checked">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+                <span class="material-icons-outlined" id="">
+                  star
+                </span>
+
+              </div>
+              <span class="year-interval">Desde 2008</span>
+            </div>
+
+
+            <div class="eps-temps">
+              <span class="eps">18 ep(s)</span>
+              <span class="temps">3 temp(s)</span>
+            </div>
+
+            <div class="series-icons">
+              <span class="material-icons-outlined" id="liked">
+                sentiment_very_satisfied
+              </span>
+              <span class="material-icons-outlined" id="disliked">
+                sentiment_very_dissatisfied
+              </span>
+              <span class="material-icons-outlined" id="watched">
+                done_all
+              </span>
+              <span class="material-icons-outlined" id="wish">
+                hotel_class
+              </span>
+            </div>
+          </div>
+
+
+        </div>
+
+        <button class="deals-scroll-right deals-paddle">
+          <span class="material-symbols-outlined">
+            arrow_forward_ios
+          </span>
+        </button>
+
+
+      </div>
+
+
+
+    </section>
+  </main>
+  <div class="navigation-mobile">
+
+    <ul>
+
+      <li class="side-bar-item " ><span class="item-text">Favoritas</span>
+
+        <span class="material-symbols-outlined" id="liked">
+          sentiment_very_satisfied
+        </span>
+
+      </li>
+      <li class="side-bar-item"><span class="item-text">Já vistas</span>
+
+        <span class="material-symbols-outlined" id="watched">
+          done_all
+        </span>
+      </li>
+      <li class="side-bar-item "><span class="item-text">Desejo ver</span>
+        <span class="material-symbols-outlined" id="wish">
+          hotel_class
+        </span>
+
+
+      </li>
+      <li class="side-bar-item " id="checked"><span class="item-text">Piores </span>
+
+        <span class="material-symbols-outlined" id="disliked">
+          sentiment_very_dissatisfied
+        </span>
+      </li>
+
+
+    </ul>
+  </div>
+
+
+</body>
+
+
+<!-- Javascript geral -->
+<script src="../JS/script.js"></script>
+<script src="../../public/JS/mobile.js"></script>
+
+
+</html>
